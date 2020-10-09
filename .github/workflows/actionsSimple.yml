@@ -13,7 +13,7 @@ jobs:
       - name: payload
         run: |
           echo ${{ github.event.client_payload.env }}
-          echo ${{ github.event.client_payload.test1 }}
+          echo ${{ github.event.client_payload.test }}
           echo ${{ github.event.client_payload.test2 }}
       - name: List Files
         run: |
