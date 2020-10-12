@@ -12,7 +12,7 @@ jobs:
         run: |
           node -v
           npm -v
-          echo JSON.stringify(${{ github.event }})
+          echo ${{ JSON.stringify(github.event) }}
       - name: python Command
         run: |
           import platform
