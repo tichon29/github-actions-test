@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-test11
-=======
-test12
->>>>>>> develop
+test110
