@@ -11,8 +11,7 @@ on:
 jobs:
   get_context:
     name: Get Context
-    runs-on: 
-      - self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: print event
         run: |
