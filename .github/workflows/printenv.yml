@@ -12,7 +12,6 @@ jobs:
     name: Get Context
     runs-on: 
       - self-hosted
-      - dev
     steps:
       - name: print event
         run: |
