@@ -49,7 +49,7 @@ jobs:
         run: |
           pwd
           ls -a
-      - name: Simple JS Action
+      - name: Simple JS action
         id: greet
         uses: actions/hello-world-javascript-action@v1
         with:
