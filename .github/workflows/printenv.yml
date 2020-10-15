@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "printenv/**"
+      - ".github/workflows/printenv.yml"
     branches:
       - develop
 
