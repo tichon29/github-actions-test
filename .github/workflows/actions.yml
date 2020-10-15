@@ -1,11 +1,38 @@
 name: Actions Workflow
 
-on: [push, pull_request]
-
+on:
+  push:
+    # branches ignore will be executed if operation is done on any branch except the ones listed in branches-ignore
+    # branches-ignore and branches can not be defined at the same time
+    # branches-ignore:
+    #   - master
+    branches:
+      - master
+      - 'feature/*' # matches feature/featA but not feature/feat/A
+      - 'feature/**' # matches feature/featA and feature/feat/A
+      - '!feature/featC' #feature/featC will be ignored
+    #tags-ignore also exists
+    tags:
+      - v1.*
+    paths:
+      - '**.js'
+      - '!filename.js'
+    # paths-ignore:
+      # - 'docs/**'
+  # schedule:
+  #   - cron: "0/5 * * * *" //Minutes (0/5 -> Will run every 5 minutes, starting at minute 0), Hours, Day of Month, Month, Day of Week
+  #   - cron: "0/6 * * * *"
+  # repository_dispatch:
+  #   types: [build]
+  # push:
+  pull_request:
+    types: [closed, assigned, opened, reopened]
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: payload
+        run: echo "${{ github.event.client_payload.env }}"
       - name: List Files
         run: |
           pwd

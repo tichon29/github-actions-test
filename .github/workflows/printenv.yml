@@ -1,0 +1,20 @@
+name: Print Env Action
+
+on:
+  push:
+    paths:
+      - "printenv/**"
+    branches:
+      - develop
+
+jobs:
+  get_context:
+    name: Get Context
+    runs-on: 
+      - self-hosted
+      - dev
+    steps:
+      - name: print event
+        run: |
+          echo "${{ toJSON(github.event) }}"
+          printenv

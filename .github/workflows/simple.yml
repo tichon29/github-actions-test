@@ -12,6 +12,7 @@ jobs:
         run: |
           node -v
           npm -v
+          echo ${{ github.event }}
       - name: python Command
         run: |
           import platform
