@@ -42,3 +42,12 @@ jobs:
         run: "curl -X POST http://localhost:3001/api/user -H 'Content-Type: application/json' -d '{\"username\": \"John\",\"address\": \"230 Rue des peupliers\"}'"
       - name: Get ussrs
         run: curl http://localhost:3001/api/users
+  node-docker2:
+    runs-on: ubuntu-latest
+    container:
+      image: node:14.4.0-alpine3.12
+    steps:
+      - name: Log Node version
+        run: |
+          node -v
+          cat /etc/os-release
