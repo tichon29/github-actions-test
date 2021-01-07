@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Test Project",
   "scripts": {
-    "serve": "node test.js"
+    "install": "cd docs && npm install",
+    "serve": "node test.js",
+    "serve2": "cd docs && npm run serve"
   },
   "dependencies": {
     "@nuxt/content": "1.9.0",
