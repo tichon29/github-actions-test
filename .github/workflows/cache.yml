@@ -16,6 +16,7 @@ jobs:
         node-version: '12.x'
         registry-url: 'https://registry.npmjs.org'
     - name: Cache node_modules
+      id: myCacheStep
       uses: actions/cache@v1
       with:
         path: '**/node_modules'
@@ -23,4 +24,5 @@ jobs:
         restore-keys: |
           ${{runner.os}}-node-
     - name: Install
+      if: steps.myCacheStep.outputs.cache-hit != 'true'
       run: npm install
