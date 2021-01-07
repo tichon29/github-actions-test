@@ -1,5 +1,9 @@
 name: Matrix
-on: push
+#on: push
+on: 
+  push:
+    branches:
+      - master
 jobs:
   node-version:
     strategy:

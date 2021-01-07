@@ -1,5 +1,8 @@
 name: Docker Container
-on: push
+on: 
+  push:
+    branches:
+      - master
 jobs:
   docker-steps:
     runs-on: ubuntu-latest
