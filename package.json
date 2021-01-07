@@ -1,0 +1,31 @@
+{
+  "name": "test-project",
+  "version": "0.0.1",
+  "description": "Test Project",
+  "scripts": {
+    "install": "cd docs && npm install"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.14",
+    "@types/node": "14.10.3",
+    "@typescript-eslint/eslint-plugin": "4.1.1",
+    "@typescript-eslint/parser": "4.1.1",
+    "child_process": "1.0.2",
+    "eslint": "7.9.0",
+    "fs-extra": "9.0.1",
+    "jest": "26.4.2",
+    "npm-run-all": "4.1.5",
+    "rimraf": "3.0.2",
+    "rollup": "2.27.1",
+    "rollup-plugin-commonjs": "10.1.0",
+    "rollup-plugin-json": "4.0.0",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-sourcemaps": "0.6.2",
+    "rollup-plugin-typescript2": "0.27.2",
+    "ts-jest": "26.3.0",
+    "ts-node": "9.0.0",
+    "typescript": "4.0.2",
+    "yaml": "1.10.0"
+  },
+  "dependencies": {}
+}
