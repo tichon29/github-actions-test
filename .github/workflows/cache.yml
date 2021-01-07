@@ -16,9 +16,10 @@ jobs:
         node-version: '12.x'
         registry-url: 'https://registry.npmjs.org'
     - name: Cache node modules
+      id: myCacheStep
       uses: actions/cache@v2
       env:
-        cache-name: cache-nodemodules
+        cache-name: cachetiche
       with:
         # npm cache files are stored in `~/.npm` on Linux/macOS
         path: ~/.npm
