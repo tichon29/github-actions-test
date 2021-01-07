@@ -2,18 +2,20 @@
   "name": "test-project",
   "version": "0.0.1",
   "description": "Test Project",
-  "scripts": {},
+  "scripts": {
+    "serve": "node test.js"
+  },
   "dependencies": {
-    "axios": "0.21.1",
-    "fastify": "3.1.1",
-    "fs": "0.0.1-security",
-    "unzipper": "0.10.10",
-    "uuid": "7.0.1",
     "@nuxt/content": "1.9.0",
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/pwa": "3.0.2",
+    "axios": "^0.21.1",
     "core-js": "3.6.5",
-    "nuxt": "2.14.6"
+    "fastify": "3.1.1",
+    "fs": "0.0.1-security",
+    "nuxt": "2.14.6",
+    "unzipper": "0.10.10",
+    "uuid": "7.0.1"
   },
   "devDependencies": {
     "@nuxt/types": "2.14.6",

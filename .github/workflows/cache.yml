@@ -26,3 +26,5 @@ jobs:
     - name: Install
       if: steps.myCacheStep.outputs.cache-hit != 'true'
       run: npm install
+    - name: Serve
+      run: npm run serve
