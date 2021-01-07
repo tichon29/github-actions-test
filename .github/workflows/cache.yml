@@ -22,7 +22,7 @@ jobs:
         cache-name: cachenow
       with:
         # npm cache files are stored in `~/.npm` on Linux/macOS
-        path: ./node_modules
+        path: node_modules
         key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name }}-
@@ -30,6 +30,6 @@ jobs:
           ${{ runner.os }}-
     - name: Install
       if: steps.myCacheStep.outputs.cache-hit != 'true'
-      run: ./npm install
+      run: npm install
     - name: Serve
-      run: ./npm run serve
+      run: npm run serve
