@@ -3,12 +3,36 @@
   "version": "0.0.1",
   "description": "Test Project",
   "scripts": {},
-  "devDependencies": {},
   "dependencies": {
     "axios": "0.21.1",
     "fastify": "3.1.1",
     "fs": "0.0.1-security",
     "unzipper": "0.10.10",
-    "uuid": "7.0.1"
+    "uuid": "7.0.1",
+    "@nuxt/content": "1.9.0",
+    "@nuxt/typescript-runtime": "2.0.0",
+    "@nuxtjs/pwa": "3.0.2",
+    "core-js": "3.6.5",
+    "nuxt": "2.14.6"
+  },
+  "devDependencies": {
+    "@nuxt/types": "2.14.6",
+    "@nuxt/typescript-build": "2.0.3",
+    "@nuxtjs/eslint-config": "3.1.0",
+    "@nuxtjs/eslint-config-typescript": "3.0.0",
+    "@nuxtjs/eslint-module": "2.0.0",
+    "@nuxtjs/style-resources": "1.0.0",
+    "@vue/test-utils": "1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.1.0",
+    "babel-jest": "26.5.0",
+    "eslint": "7.10.0",
+    "eslint-plugin-nuxt": "1.0.0",
+    "jest": "26.5.0",
+    "node-sass": "4.14.1",
+    "prism-themes": "1.4.1",
+    "sass-loader": "10.0.3",
+    "ts-jest": "26.4.1",
+    "vue-jest": "3.0.4"
   }
 }
