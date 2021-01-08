@@ -27,7 +27,7 @@ jobs:
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}-
-    - name: Install
+    - name: Install or ci
       #if: steps.myCacheStep.outputs.cache-hit != 'true'
       run: npm ci
     - name: Serve2
