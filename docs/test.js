@@ -1,4 +1,11 @@
 const fs = require('fs');
+const path = require('path');
+const walk = require('walk');
+
+
+const dir_path = path.resolve(__dirname, 'node_modules');
+
+const walker = walk.walk(dir_path, {followLinks:false});
 
 const res = fs.readFileSync('test.txt');
 console.log(res);
