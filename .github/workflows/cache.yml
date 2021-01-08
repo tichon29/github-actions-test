@@ -19,7 +19,7 @@ jobs:
       id: myCacheStep
       uses: actions/cache@v2
       env:
-        cache-name: cachenow
+        cache-name: cachetest
       with:
         # npm cache files are stored in `~/.npm` on Linux/macOS
         path: node_modules
